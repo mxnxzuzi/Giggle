@@ -1,14 +1,28 @@
+/* 수정하지 마세요 */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     font-size: 1.1rem;
+    margin-bottom: 10vh;
 }
 
 header {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    background-color: white;
     border-bottom: 1px solid #ddd; 
     padding: 1rem 2rem;
+    box-sizing: border-box;
 }
+
+main {
+    margin-top: 110px;
+}
+
+/* 여기서 부터 수정하세요 */
 
 a {
     text-decoration: none;
@@ -46,7 +60,6 @@ a {
 .nav-content a, .nav-user a { 
     font-weight: bold; 
     padding: 0.5rem 1rem;
-    transition: color 0.3s ease;
 }
 
 .nav-content li, .nav-user li {
@@ -55,17 +68,14 @@ a {
 
 .nav-content a:hover, .nav-user a:hover, .menu a:hover{
     color: #fcb900;
-    font-size: 1.2rem;
 }
 
 .nav-content a:active, .nav-user a:active, .menu a:active {
     color: #000000;
-    font-size: 1.2rem;
 }
 
 .nav-content a:focus, .nav-user a:focus, .menu a:focus {
     color: #000000;
-    font-size: 1.2rem;
 }
 
 .menu {
@@ -111,6 +121,7 @@ a {
 .ott-rec input[type="button"] {
     background-color: #d9d9d9;
     color: #000000;
+    margin-right: 2vw;
     width: 13%;
     height: 30%;
     font-size: 1.1rem;
@@ -124,4 +135,8 @@ a {
 
 .ott-rec input[type="button"]:hover {
     background-color: #ffdd75; 
+}
+
+.ott-rec-div {
+    margin-left: 3vw;
 }
