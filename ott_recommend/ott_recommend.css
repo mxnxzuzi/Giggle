@@ -1,25 +1,6 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 1.1rem;
-}
-
-header {
-    position: fixed; /*position을 fixed로 해서 밑으로 스크롤해도 위의 header는 고정되어있음*/
-    top: 0; 
-    left: 0;
-    width: 100%;
-    background-color: white;
-    border-bottom: 1px solid #ddd; 
-    padding: 1rem 2rem;
-    box-sizing: border-box;
-    height: 80px; 
-}
-
+/* 여기서 부터 수정하세요 */
 main {
     margin-top: 100px;
-    margin-bottom: 10vh;
 }
 
 a {
@@ -33,19 +14,6 @@ a {
     justify-content: space-between;
 }
 
-.logo {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.logo a {
-    font-size: 2.5rem; 
-    font-weight: bold; 
-    color: #fcb900;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 10px;
-}
 
 .nav-content, .nav-user {
     display: flex;
@@ -60,7 +28,6 @@ a {
 .nav-content a, .nav-user a { 
     font-weight: bold; 
     padding: 0.5rem 1rem;
-    transition: color 0.3s ease;
 }
 
 .nav-content li, .nav-user li {
@@ -84,6 +51,7 @@ a {
     font-weight: bold; 
     margin-top: 30px;  
     margin-left: 50px; 
+
 }
 
 .menu-link {
@@ -140,4 +108,7 @@ a {
 
 .ott-rec-div {
     margin-left: 3vw;
+
 }
+
+
