@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTTown</title>
+    <link rel="stylesheet" href="../fix_style.css">
+    <link rel="stylesheet" href="mainpage.css">
+</head>
+<body>
+    <header>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#">OTTown</a>
+                </div>
+                <ul class="nav-content">
+                    <li><a href="">영화</a></li>
+                    <li><a href="">드라마</a></li>
+                    <li><a href="">애니메이션</a></li>
+                    <li style="margin-top: 3px;"><a href="">OTT</a></li>
+                </ul>
+                <ul class="nav-user">
+                    <li><a href="">공동구매</a></li>
+                    <li><a href="" >찜</a></li>
+                    <li><a href="">마이페이지</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main>
+        <div class="title">
+            <h1>OTTown에서 함께 구매하고 함께 즐기세요.</h1>
+            <h3 style="font-weight: normal;">OTT 별 콘텐츠를 확인하고 공동 구매를 시작해보세요!</h3>
+        </div>
+        <div class="button-container">
+            <button class="startButton" type="button" id="startNow">바로 시작하기</button>
+            <button class="checkContentButton" type="button" id="confirmContent">컨텐츠 확인하기</button>
+        </div>
+        <div class="conveyor-belt" id="belt">
+            <div class="box"><img src="../logo/coupang.webp"></div>
+            <div class="box"><img src="../logo/disney.svg"></div>
+            <div class="box"><img src="../logo/laftel.webp"></div>
+            <div class="box"><img src="../logo/netflix.png"></div>
+            <div class="box"><img src="../logo/tving.svg"></div>
+            <div class="box"><img src="../logo/wavve.png"></div>
+        </div>
+    </main>
+    <script>
+        const button = document.getElementById('startNow');
+    
+        button.addEventListener('click', function() {
+            window.location.href = '../signup/signup.html';
+        });
+    </script>
+</body>
+</html>

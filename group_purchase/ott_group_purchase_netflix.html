@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTTown</title>
+    <link rel="stylesheet" href="../fix_style.css">
+    <link rel="stylesheet" href="./ott_group_purchase_netflix.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">OTTown</a>
+            </div>
+            <ul class="nav-content">
+                <li><a href="">영화</a></li>
+                <li><a href="">드라마</a></li>
+                <li><a href="">애니메이션</a></li>
+                <li style="margin-top: 3px;"><a href="">OTT</a></li>
+            </ul>
+            <ul class="nav-user">
+                <li><a href="" style="font-size: 1.3rem; color: #000000;">공동구매</a></li>
+                <li><a href="" >찜</a></li>
+                <li><a href="">마이페이지</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <img src="../logo/netflix.png">
+            <div class="group-room">
+                <div class="room">
+                    <div><span class="name">동덕</span>님의 공동구매방</div>
+                    <span class="count">3 / 4</span>
+                </div>
+                <div class="room">
+                    <div><span class="name">동덕</span>님의 공동구매방</div>
+                    <span class="count">2 / 4</span>
+                </div>
+                <div class="room">
+                    <div><span class="name">동덕</span>님의 공동구매방</div>
+                    <span class="count">1 / 4</span>
+                </div>
+                <div class="room">
+                    <div><span class="name">동덕</span>님의 공동구매방</div>
+                    <span class="count">1 / 4</span>
+                </div>
+                <div class="room">
+                    <div><span class="name">동덕</span>님의 공동구매방</div>
+                    <span class="count">3 / 4</span>
+                </div>
+                <div class="room">
+                    <div><span class="name">동덕</span>님의 공동구매방</div>
+                    <span class="count">모집완료</span>
+                </div>
+                <div class="room">
+                    <div><span class="name">동덕</span>님의 공동구매방</div>
+                    <span class="count">3 / 4</span>
+                </div>
+                <div class="room">
+                    <div><span class="name">동덕</span>님의 공동구매방</div>
+                    <span class="count">2 / 4</span>
+                </div>
+                <div class="room">
+                    <div><span class="name">동덕</span>님의 공동구매방</div>
+                    <span class="count">1 / 4</span>
+                </div>
+                <div class="room">
+                    <div><span class="name">동덕</span>님의 공동구매방</div>
+                    <span class="count">1 / 4</span>
+                </div>
+                <div class="room">
+                    <div><span class="name">동덕</span>님의 공동구매방</div>
+                    <span class="count">3 / 4</span>
+                </div>
+                <div class="room">
+                    <div><span class="name">동덕</span>님의 공동구매방</div>
+                    <span class="count">모집완료</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const dongdukDiv = document.querySelector('div.room');
+
+        dongdukDiv.addEventListener('click', function() {
+            window.location.href = '../ott_purchase_room/ott_purchase_room_member.html';
+        });
+    </script>
+</body>
+</html>
