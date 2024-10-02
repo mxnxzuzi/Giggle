@@ -61,6 +61,7 @@ a {
 .nav-content a, .nav-user a { 
     font-weight: bold; 
     padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
 }
 
 .nav-content li, .nav-user li {
@@ -78,5 +79,4 @@ a {
 .nav-content a:focus, .nav-user a:focus, .menu a:focus {
     color: #000000;
 }
-
 

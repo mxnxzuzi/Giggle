@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OTTown</title>
-    <link rel="stylesheet" href="./fix_style.css">
+    <link rel="stylesheet" href="../fix_style.css">
     <link rel="stylesheet" href="./ott_group_purchase_netflix.css">
 </head>
 <body>
@@ -28,7 +28,10 @@
     </header>
     <main>
         <div class="container">
-            <img src="logo/netflix.png">
+            <div class="logo_container">
+                <img src="../logo/netflix.png">
+                <a href="#" class="btn-room-create">방 개설하기</a>
+            </div>
             <div class="group-room">
                 <div class="room">
                     <div><span class="name">동덕</span>님의 공동구매방</div>
@@ -80,8 +83,13 @@
                 </div>
             </div>
         </div>
-        
     </main>
+    <script>
+        const dongdukDiv = document.querySelector('div.room');
+
+        dongdukDiv.addEventListener('click', function() {
+            window.location.href = '../ott_purchase_room/ott_purchase_room_member.html';
+        });
+    </script>
 </body>
 </html>
-

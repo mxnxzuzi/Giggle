@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OTTown</title>
-    <link rel="stylesheet" href="fix_style.css">
-    <link rel="stylesheet" href="ott_recommend.css">
+    <link rel="stylesheet" href="../fix_style.css">
+    <link rel="stylesheet" href="./ott_recommend.css">
 </head>
 <body>
     <header>
@@ -29,21 +29,21 @@
     <main>
         <div class="menu">
             <a href="" class="menu-link">보관함</a>
-            <a href="" class="menu-link" style="font-size: 1.3rem; color: #000000;">OTT 추천</a>
+            <a href="" class="menu-link" style="color: #000000;">OTT 추천</a>
             <p>&nbsp;&nbsp;&nbsp;선택한 작품 32개</p>
         </div>
         <div class ="ott-list">
             <div class="ott-rec">
                 <div class = "ott-rec-div">
-                    <br><img src="logo/netflix.png"><!--img와 p를 div로 따로 묶어둠으로써 img 밑에 p 배치 가능-->
+                    <br><img src="../logo/netflix.png"><!--img와 p를 div로 따로 묶어둠으로써 img 밑에 p 배치 가능-->
                     <p>선택한 작품 23개</p><!--p 태그는 block 형식이므로 줄바꿈 코드없이 줄바꿈됨-->
                 </div>
-                <input type="button" value="공동구매">
+                <input type="button" id="purchase-netflix" value="공동구매">
                 <br>
             </div>
             <div class="ott-rec">
                 <div class = "ott-rec-div">
-                    <br><img src="logo/tving.svg">
+                    <br><img src="../logo/tving.svg">
                     <p>선택한 작품 16개</p>
                 </div>
                 <input type="button" value="공동구매">
@@ -51,7 +51,7 @@
             </div>
             <div class="ott-rec">
                 <div class = "ott-rec-div">
-                    <br><img src="logo/coupang.webp">
+                    <br><img src="../logo/coupang.webp">
                     <p>선택한 작품 8개</p>
                 </div>
                 <input type="button" value="공동구매">
@@ -59,7 +59,7 @@
             </div>
             <div class="ott-rec">
                 <div class = "ott-rec-div">
-                    <br><img src="logo/disney.svg" style="width: 25%;">
+                    <br><img src="../logo/disney.svg" style="width: 25%;">
                     <p>선택한 작품 4개</p>
                 </div>
                 <input type="button" value="공동구매">
@@ -67,7 +67,7 @@
             </div>
             <div class="ott-rec">
                 <div class = "ott-rec-div">
-                    <br><img src="logo/laftel.webp">
+                    <br><img src="../logo/laftel.webp">
                     <p>선택한 작품 1개</p>
                 </div>
                 <input type="button" value="공동구매">
@@ -75,8 +75,14 @@
             </div>
         </div>
     </main>
+    <script>
+        const button = document.getElementById('purchase-netflix');
+    
+        button.addEventListener('click', function() {
+            window.location.href = '../group_purchase/ott_group_purchase_netflix.html';
+        });
+    </script>
 </body>
 </html>
-
 
 

@@ -1,49 +1,6 @@
-/* 여기서 부터 수정하세요 */
+
 main {
     margin-top: 100px;
-}
-
-a {
-    text-decoration: none;
-    color: #727272;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.nav-content, .nav-user {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: flex-start; 
-}
-
-.nav-user {
-    margin-left: auto;
-}
-
-.nav-content a, .nav-user a { 
-    font-weight: bold; 
-    padding: 0.5rem 1rem;
-}
-
-.nav-content li, .nav-user li {
-    display: inline-block;
-}
-
-.nav-content a:hover, .nav-user a:hover, .menu a:hover{
-    color: #fcb900;
-}
-
-.nav-content a:active, .nav-user a:active, .menu a:active {
-    color: #000000;
-}
-
-.nav-content a:focus, .nav-user a:focus, .menu a:focus {
-    color: #000000;
 }
 
 .menu {

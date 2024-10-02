@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OTTown</title>
-    <link rel="stylesheet" href="fix_style.css">
+    <link rel="stylesheet" href="../fix_style.css">
     <link rel="stylesheet" href="mainpage.css">
 </head>
 <body>
@@ -33,18 +33,24 @@
             <h3 style="font-weight: normal;">OTT 별 콘텐츠를 확인하고 공동 구매를 시작해보세요!</h3>
         </div>
         <div class="button-container">
-            <button class="startButton" type="button">바로 시작하기</button>
-            <button class="checkContentButton" type="button">컨텐츠 확인하기</button>
+            <button class="startButton" type="button" id="startNow">바로 시작하기</button>
+            <button class="checkContentButton" type="button" id="confirmContent">컨텐츠 확인하기</button>
         </div>
         <div class="conveyor-belt" id="belt">
-            <div class="box"><img src="logo/coupang.webp"></div>
-            <div class="box"><img src="logo/disney.svg"></div>
-            <div class="box"><img src="logo/laftel.webp"></div>
-            <div class="box"><img src="logo/netflix.png"></div>
-            <div class="box"><img src="logo/tving.svg"></div>
-            <div class="box"><img src="logo/wavve.png"></div>
+            <div class="box"><img src="../logo/coupang.webp"></div>
+            <div class="box"><img src="../logo/disney.svg"></div>
+            <div class="box"><img src="../logo/laftel.webp"></div>
+            <div class="box"><img src="../logo/netflix.png"></div>
+            <div class="box"><img src="../logo/tving.svg"></div>
+            <div class="box"><img src="../logo/wavve.png"></div>
         </div>
     </main>
+    <script>
+        const button = document.getElementById('startNow');
     
+        button.addEventListener('click', function() {
+            window.location.href = '../signup/signup.html';
+        });
+    </script>
 </body>
 </html>
